@@ -6,8 +6,11 @@ body {
     Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   line-height: 1.6;
   font-size: 18px;
-  background-color: black;
-  color: white;
+  background-color: #0F111F;
+  color: #999;
+  height: 100%;
+  overflow-y: auto;
+  /* overflow-x: hidden; */
 }
 
 * {
