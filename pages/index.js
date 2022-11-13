@@ -18,9 +18,9 @@ export default function Home() {
           {siteTitle}
         </h1>
         <h2 className={homeStyles.subtitle}>
-          {subTitle} | Currently @
-          <a href="https://lowes.co.in/" target="_blank">
-            Lowe's India
+          {subTitle} | Currently pursuing MS CS @
+          <a href="https://www.stonybrook.edu/" target="_blank">
+            Stony Brook University
           </a>
         </h2>
       </header>
