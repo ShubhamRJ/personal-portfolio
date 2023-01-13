@@ -1,11 +1,42 @@
 .container {
   height: 100%;
-  padding: 0 20px 20px 20px;
+  padding: 0 20px 10px 20px;
 }
 .bodyRow {
-    height: 90%;
+  height: 90%;
 }
-.bodyRow > *{
-    height: 100%;
-    justify-content: center;
+.bodyRow > * {
+  height: 100%;
+  justify-content: center;
+}
+.mowBodyRow {
+  height: 90%;
+  flex-direction: column;
+}
+.mowBodyRow > * {
+  justify-content: center;
+}
+.main {
+  overflow-y: auto;
+}
+.mowMain {
+  padding: 0 12px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+.mowMain > * {
+  width: 100%;
+}
+.main::-webkit-scrollbar {
+  display: none;
+}
+.main {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.mowSocial {
+  padding-top: 10px;
+  position: sticky;
 }

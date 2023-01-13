@@ -1,5 +1,7 @@
-import { Navbar, StyledLink, Text } from "@nextui-org/react";
-import React, { useState } from "react";
+import { Navbar, StyledLink } from "@nextui-org/react";
+import Link from "next/link";
+import { useRef, useState } from "react";
+import GradientText from "../GradientText/GradientText";
 import styles from "./navbar.module.css";
 
 const NavItems = [
@@ -10,6 +12,10 @@ const NavItems = [
   {
     title: "Work",
     link: "#work",
+  },
+  {
+    title: "Education",
+    link: "#education",
   },
   {
     title: "Contact",
@@ -23,21 +29,16 @@ const NavItems = [
 
 export default function NavBar() {
   const [currentTab, setCurrentTab] = useState("");
+  const navToggleRef = useRef();
+
   return (
     <Navbar variant="sticky" className={styles.navbar}>
       <Navbar.Brand>
-        <Text
-          h5
-          size={30}
-          css={{
-            textGradient: "45deg, $blue600 -20%, $pink600 50%",
-          }}
-          weight="bold"
-        >
-          SRJ
-        </Text>
+        <Link href="#home">
+          <GradientText text="SJ" h4 size={40} weight="bold" />
+        </Link>
       </Navbar.Brand>
-      <Navbar.Toggle showIn="xs" />
+      <Navbar.Toggle showIn={"xs"} autoFocus ref={navToggleRef} />
       <Navbar.Content
         enableCursorHighlight
         activeColor="primary"
@@ -52,22 +53,19 @@ export default function NavBar() {
             isActive={item.title == currentTab}
             target={item.title == "Resume" ? "_blank" : ""}
           >
-            <Text
-              css={{
-                textGradient: "45deg, $blue600 -20%, $pink600 50%",
-              }}
-            >
-              {item.title}
-            </Text>
+            <GradientText text={item.title} weight="bold" />
           </Navbar.Link>
         ))}
       </Navbar.Content>
-      <Navbar.Collapse disableAnimation>
-        {NavItems.map((item, index) => (
+      <Navbar.Collapse>
+        {NavItems.map((item) => (
           <Navbar.CollapseItem
             key={item.title}
             activeColor="primary"
             isActive={item.title == currentTab}
+            onClick={() => {
+              navToggleRef.current && (navToggleRef.current as any).click();
+            }}
           >
             <StyledLink
               color="inherit"
@@ -78,7 +76,7 @@ export default function NavBar() {
               onClick={() => setCurrentTab(item.title)}
               target={item.title == "Resume" ? "_blank" : ""}
             >
-              {item.title}
+              <GradientText text={item.title} props={{}} />
             </StyledLink>
           </Navbar.CollapseItem>
         ))}

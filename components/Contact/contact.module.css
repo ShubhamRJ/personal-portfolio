@@ -1,0 +1,10 @@
+.contact {
+    width: 70%;
+    height: 75vh;
+}
+
+@media (max-width: 768px) {
+    .contact {
+        width: 100%;
+    }
+}

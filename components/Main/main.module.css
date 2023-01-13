@@ -1,16 +1,22 @@
 .main {
-    height: 100%;
-    margin: auto;
+    min-height: 100vh;
+    width: 70% !important;
+    padding: 10% 0;
+}
+@media (max-width: 768px) {
+    .main {
+        padding: 50% 0;
+    }
 }
 .h1 {
     padding: 0;
-    margin: 0;
-    line-height: 6.5rem;
+    margin: 10px 0;
+    line-height: initial;
 }
 .h1small {
     padding: 0;
-    margin: 0;
-    line-height: 4rem;
+    margin: 10px 0;
+    line-height: initial;
 }
 .h3 {
     padding: 0;

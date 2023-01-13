@@ -1,25 +1,50 @@
-import { Col, Container, Row, theme } from "@nextui-org/react";
+import { Col, Container, Row } from "@nextui-org/react";
+import About from "../components/About/About";
+import Contact from "../components/Contact/Contact";
 import { useAppContext } from "../components/Context/AppContext";
+import Education from "../components/Education/Education";
 import Layout from "../components/layout";
 import Main from "../components/Main/Main";
 import NavBar from "../components/NavBar/NavBar";
 import Social from "../components/Social/Social";
+import Work from "../components/Work/Work";
 import styles from "./index.module.css";
 
 export default function Home() {
+  const device = useAppContext();
   return (
     <Layout>
       <Container lg={true} className={styles.container}>
         <Row className={styles.navRow}>
           <NavBar />
         </Row>
-        <Row className={styles.bodyRow}>
-          <Col span={1}><Social /></Col>
-          <Col span={10}>
-            <Main />
-          </Col>
-          <Col span={1}></Col>
-        </Row>
+        {device == "lg" || device == "md" ? (
+          <Row className={styles.bodyRow}>
+            <Col span={device == "lg" ? 1 : 2}>
+              <Social />
+            </Col>
+            <Col span={device == "lg" ? 11 : 10} className={styles.main}>
+              <Main />
+              <About />
+              <Work />
+              <Education />
+              <Contact />
+            </Col>
+          </Row>
+        ) : (
+          <Row className={styles.mowBodyRow}>
+            <Row className={styles.mowMain}>
+              <Main/>
+              <About />
+              <Work />
+              <Education />
+              <Contact />
+            </Row>
+            <Row className={styles.mowSocial}>
+              <Social />
+            </Row>
+          </Row>
+        )}
       </Container>
     </Layout>
   );

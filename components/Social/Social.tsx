@@ -1,8 +1,10 @@
+import { useAppContext } from "../Context/AppContext";
 import styles from "./social.module.css";
 
 export default function Social() {
+  const device = useAppContext();
   return (
-    <div className={styles.verticalAlign}>
+    <div className={device == 'lg' ? styles.verticalAlign : styles.horizontalAlign}>
       <a
         href="https://www.linkedin.com/in/shubhamjawandhiya/"
         target="_blank"
