@@ -1,0 +1,18 @@
+.main {
+    height: 100%;
+    margin: auto;
+}
+.h1 {
+    padding: 0;
+    margin: 0;
+    line-height: 6.5rem;
+}
+.h1small {
+    padding: 0;
+    margin: 0;
+    line-height: 4rem;
+}
+.h3 {
+    padding: 0;
+    margin: 0;
+}

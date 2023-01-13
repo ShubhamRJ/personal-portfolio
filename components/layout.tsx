@@ -4,9 +4,9 @@ import Link from 'next/link'
 
 export const siteTitle = 'Shubham Jawandhiya'
 
-export default function Layout({ children, home }) {
+export default function Layout({ children }) {
   return (
-    <div className={styles.container}>
+    <div className={styles.body}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
@@ -22,14 +22,7 @@ export default function Layout({ children, home }) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <main>{children}</main>
-      {!home && (
-        <div className={styles.backToHome}>
-          <Link href="/">
-            <a>← Back to home</a>
-          </Link>
-        </div>
-      )}
+      <main className={styles.body}>{children}</main>
     </div>
   )
 }
