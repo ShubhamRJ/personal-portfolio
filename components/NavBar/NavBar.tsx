@@ -57,7 +57,7 @@ export default function NavBar() {
           </Navbar.Link>
         ))}
       </Navbar.Content>
-      <Navbar.Collapse>
+      <Navbar.Collapse disableAnimation>
         {NavItems.map((item) => (
           <Navbar.CollapseItem
             key={item.title}
