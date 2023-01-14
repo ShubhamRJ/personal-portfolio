@@ -5,7 +5,11 @@ export default function Social() {
   const device = useAppContext();
   return (
     <div
-      className={device == "lg" ? styles.verticalAlign : styles.horizontalAlign}
+      className={
+        device == "lg" || device == "md"
+          ? styles.verticalAlign
+          : styles.horizontalAlign
+      }
     >
       <a
         href="https://www.linkedin.com/in/shubhamjawandhiya/"
