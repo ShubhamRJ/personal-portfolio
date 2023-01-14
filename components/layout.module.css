@@ -1,6 +1,7 @@
 .body {
   height: 100vh;
   font-family: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+  background-color: #121212;
 }
 
 .header {
