@@ -27,7 +27,7 @@ export default function Main() {
         h5 = {device != 'lg'}
         css={{ color: "$gray700" }}
       >
-        Software Engineer - Full Stack & NLP Research
+        Software Engineer &nbsp; | &nbsp; Travel Enthusiast &nbsp; | &nbsp; Coffee for life
       </Text>
     </div>
   );

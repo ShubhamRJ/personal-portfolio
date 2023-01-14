@@ -6,6 +6,7 @@ import { AppWrapper } from '../components/Context/AppContext';
 const AppContext = createContext({});
 
 export default function App({ Component, pageProps }) {
+  console.log("Hi there fellow developer! Have a nice day.")
   const lightTheme = createTheme({
     type: 'light',
     theme: {}

@@ -40,3 +40,15 @@
   padding-top: 10px;
   position: sticky;
 }
+.line {
+  width: 35%;
+  border: 1px #3A3F42 solid;
+  height: 1px;
+  margin: auto 0;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

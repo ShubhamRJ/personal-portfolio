@@ -1,4 +1,4 @@
-import { Col, Container, Row } from "@nextui-org/react";
+import { Col, Container, Row, Text } from "@nextui-org/react";
 import About from "../components/About/About";
 import Contact from "../components/Contact/Contact";
 import { useAppContext } from "../components/Context/AppContext";
@@ -29,12 +29,17 @@ export default function Home() {
               <Work />
               <Education />
               <Contact />
+              <div className={styles.footer}>
+                <div className={styles.line} />
+                <Text h5 css={{ color: "$gray600" }}>Shubham Jawandhiya</Text>
+                <div className={styles.line} />
+              </div>
             </Col>
           </Row>
         ) : (
           <Row className={styles.mowBodyRow}>
             <Row className={styles.mowMain}>
-              <Main/>
+              <Main />
               <About />
               <Work />
               <Education />

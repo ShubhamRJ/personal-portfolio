@@ -18,9 +18,9 @@ export default function Social() {
       <a href="https://twitter.com/ShubhamRJ28" target="_blank">
         <img src="/images/twitter.svg" height={20} />
       </a>
-      <div title="Mail to: shubhamjawandhiya304@gmail.com">
+      <a href="mailto:shubhamjawandhiya304@gmail.com" title="Mail to: shubhamjawandhiya304@gmail.com">
         <img src="/images/gmail.svg" height={20} />
-      </div>
+      </a>
       <a
         href="https://stackoverflow.com/users/8352271/shubham-jawandhiya"
         target="_blank"
