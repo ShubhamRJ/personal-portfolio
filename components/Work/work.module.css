@@ -1,10 +1,10 @@
 .work {
-    width: 70%;
-    height: 80vh;
+  width: 70%;
+  height: 80vh;
 }
 
 @media (max-width: 768px) {
-    .work {
-        width: 100%;
-    }
+  .work {
+    width: 100%;
+  }
 }

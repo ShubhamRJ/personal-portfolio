@@ -1,21 +1,21 @@
 .verticalAlign {
-    height: inherit;
-    justify-content: flex-end;
-    display: flex;
-    flex-direction: column;
-    padding-left: 24px;
-    gap: 2%;
-    padding-bottom: 20px;
+  height: inherit;
+  justify-content: flex-end;
+  display: flex;
+  flex-direction: column;
+  padding-left: 24px;
+  gap: 2%;
+  padding-bottom: 20px;
 }
 
 .horizontalAlign {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
-.mediaImg > *{
-    height: 20px;
-    color: linear-gradient(45deg, #0072F5 -20%, #FF4ECD 50%)
+.mediaImg > * {
+  height: 20px;
+  color: linear-gradient(45deg, #0072f5 -20%, #ff4ecd 50%);
 }

@@ -1,18 +1,18 @@
 .contact {
-    width: 70%;
-    min-height: 75vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  width: 70%;
+  min-height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .button {
-    color: #06B7DB !important;
-    border-color: #06B7DB !important;
+  color: #06b7db !important;
+  border-color: #06b7db !important;
 }
 
 @media (max-width: 768px) {
-    .contact {
-        width: 100%;
-    }
+  .contact {
+    width: 100%;
+  }
 }

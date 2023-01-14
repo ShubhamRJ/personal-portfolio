@@ -1,35 +1,32 @@
-import { createTheme, NextUIProvider } from '@nextui-org/react';
-import { ThemeProvider as NextThemesProvider } from 'next-themes';
-import { createContext } from 'react';
-import { AppWrapper } from '../components/Context/AppContext';
-
-const AppContext = createContext({});
+import { createTheme, NextUIProvider } from "@nextui-org/react";
+import { ThemeProvider as NextThemesProvider } from "next-themes";
+import { AppWrapper } from "../components/Context/AppContext";
 
 export default function App({ Component, pageProps }) {
-  console.log("Hi there fellow developer! Have a nice day.")
+  console.log("Hi there fellow developer! Have a nice day.");
   const lightTheme = createTheme({
-    type: 'light',
-    theme: {}
-  })
-  
+    type: "light",
+    theme: {},
+  });
+
   const darkTheme = createTheme({
-    type: 'dark',
-    theme: {}
-  })
+    type: "dark",
+    theme: {},
+  });
   return (
     <NextThemesProvider
       defaultTheme="dark"
       attribute="class"
       value={{
         light: lightTheme.className,
-        dark: darkTheme.className
+        dark: darkTheme.className,
       }}
     >
       <NextUIProvider>
-        <AppWrapper >
+        <AppWrapper>
           <Component {...pageProps} />
         </AppWrapper>
       </NextUIProvider>
     </NextThemesProvider>
-  )
+  );
 }

@@ -1,7 +1,7 @@
-import Head from 'next/head'
-import styles from './layout.module.css'
+import Head from "next/head";
+import styles from "./layout.module.css";
 
-export const siteTitle = 'Shubham Jawandhiya'
+export const siteTitle = "Shubham Jawandhiya";
 
 export default function Layout({ children }) {
   return (
@@ -24,5 +24,5 @@ export default function Layout({ children }) {
       </Head>
       <main className={styles.body}>{children}</main>
     </div>
-  )
+  );
 }

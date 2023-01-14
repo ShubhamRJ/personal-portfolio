@@ -8,8 +8,8 @@ export default function Main() {
   return (
     <div className={styles.main} id="home">
       <Text
-        h3 = {device == 'lg'}
-        h5 = {device != 'lg'}
+        h3={device == "lg"}
+        h5={device != "lg"}
         className={styles.h3}
         css={{ color: "$gray700" }}
       >
@@ -22,12 +22,9 @@ export default function Main() {
         className={device == "lg" ? styles.h1 : styles.h1small}
         weight="semibold"
       />
-      <Text
-        h3 = {device == 'lg'}
-        h5 = {device != 'lg'}
-        css={{ color: "$gray700" }}
-      >
-        Software Engineer &nbsp; | &nbsp; Travel Enthusiast &nbsp; | &nbsp; Coffee for life
+      <Text h3={device == "lg"} h5={device != "lg"} css={{ color: "$gray700" }}>
+        Software Engineer &nbsp; | &nbsp; Travel Enthusiast &nbsp; | &nbsp;
+        Coffee for life
       </Text>
     </div>
   );

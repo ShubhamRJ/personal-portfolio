@@ -4,7 +4,9 @@ import styles from "./social.module.css";
 export default function Social() {
   const device = useAppContext();
   return (
-    <div className={device == 'lg' ? styles.verticalAlign : styles.horizontalAlign}>
+    <div
+      className={device == "lg" ? styles.verticalAlign : styles.horizontalAlign}
+    >
       <a
         href="https://www.linkedin.com/in/shubhamjawandhiya/"
         target="_blank"
@@ -18,7 +20,10 @@ export default function Social() {
       <a href="https://twitter.com/ShubhamRJ28" target="_blank">
         <img src="/images/twitter.svg" height={20} />
       </a>
-      <a href="mailto:shubhamjawandhiya304@gmail.com" title="Mail to: shubhamjawandhiya304@gmail.com">
+      <a
+        href="mailto:shubhamjawandhiya304@gmail.com"
+        title="Mail to: shubhamjawandhiya304@gmail.com"
+      >
         <img src="/images/gmail.svg" height={20} />
       </a>
       <a

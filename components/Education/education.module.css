@@ -1,10 +1,10 @@
 .education {
-    width: 70%;
-    height: 80vh;
+  width: 70%;
+  height: 80vh;
 }
 
 @media (max-width: 768px) {
-    .education {
-        width: 100%;
-    }
+  .education {
+    width: 100%;
+  }
 }
