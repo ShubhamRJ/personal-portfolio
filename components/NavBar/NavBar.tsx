@@ -59,7 +59,7 @@ export default function NavBar() {
             src={
               isDark
                 ? "/images/moon-svgrepo-com.svg"
-                : "/images/sun-filled-svgrepo-com.svg"
+              : "/images/sun-filled-svgrepo-com.svg"
             }
             height={20}
             width={20}

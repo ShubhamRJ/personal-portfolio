@@ -19,7 +19,7 @@ const viewport = () => {
 }
 
 export function AppWrapper({ children }) {
-  const [device, setDevice] = useState("xl");
+  const [device, setDevice] = useState("lg");
   useEffect(() => {
     setDevice(viewport());
   }, []);
