@@ -61,7 +61,7 @@ export default function Projects() {
         className={styles.projectCard}
       >
         {list.map((item, index) => (
-          <Grid xs={12} sm={4} key={index} className={styles.gridCard}>
+          <Grid xs={12} sm={4} key={item.title} className={styles.gridCard}>
             <Card css={{ p: "$6", mw: "400px" }} isHoverable>
               <Card.Header className={styles.cardHeader}>
                 <Grid.Container css={{ pl: "$6" }}>
@@ -84,6 +84,7 @@ export default function Projects() {
                 <div className={styles.tagGroup}>
                   {item.tags.map((tag, index) => (
                     <Button
+                      key={`tag-${index}`}
                       className={styles.tagButton}
                       flat
                       size="xs"

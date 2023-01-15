@@ -22,7 +22,19 @@ const companyContent = {
       "Created a micro-frontend (MFE) framework using module federation frontend for seamless MFE deployments across multiple pages.",
       "Implemented A/B tests, created Grafana dashboards and integrated analytics and tools like SonarQube, Veracode, Datadog.",
     ],
-    tags: ["JS", "TS", "Docker", "GKE", "Grafana", "Kibana", "NodeJS", "Webpack", "Module Federation", "Akamai", "SonarQube"],
+    tags: [
+      "JS",
+      "TS",
+      "Docker",
+      "GKE",
+      "Grafana",
+      "Kibana",
+      "NodeJS",
+      "Webpack",
+      "Module Federation",
+      "Akamai",
+      "SonarQube",
+    ],
     awards: ["Spot Award x 3 (2021, 2022),", "Top Contributor Award"],
   },
   "Crio.Do": {
@@ -58,6 +70,7 @@ export default function Work() {
             if (comp == selectedComp) {
               return (
                 <GradientText
+                  key={comp}
                   text={comp}
                   h5
                   weight="bold"
@@ -85,15 +98,16 @@ export default function Work() {
             </Text>
           </div>
           <ul className={styles.descList}>
-            {companyContent[selectedComp].description.map((desc) => (
-              <li>
+            {companyContent[selectedComp].description.map((desc, index) => (
+              <li key={`desc-${index}`}>
                 <Text color="$gray700">{desc}</Text>
               </li>
             ))}
           </ul>
           <div className={styles.tagGroup}>
-            {companyContent[selectedComp].tags.map((tag, index) => (
+            {companyContent[selectedComp].tags.map((tag) => (
               <Button
+                key={tag}
                 className={styles.tagButton}
                 flat
                 size="xs"
@@ -111,7 +125,7 @@ export default function Work() {
               </Text>
               <div className={styles.awardsList}>
                 {companyContent[selectedComp].awards.map((award) => (
-                  <Text color="$gray500" size="$md">
+                  <Text color="$gray500" size="$md" key={award}>
                     &nbsp;{award}&nbsp;
                   </Text>
                 ))}
