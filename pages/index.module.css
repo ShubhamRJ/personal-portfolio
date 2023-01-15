@@ -21,7 +21,7 @@
 }
 .mowMain {
   padding: 0 12px;
-  height: 95%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   overflow-y: auto;
@@ -38,6 +38,9 @@
 }
 .mowSocial {
   padding-top: 10px;
+  bottom: 0;
+  left: 0;
+  right: 0;
   position: sticky;
 }
 .line {

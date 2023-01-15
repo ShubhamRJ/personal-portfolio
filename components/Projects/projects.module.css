@@ -41,4 +41,5 @@
 .projectCard {
   min-height: 100%;
   height: fit-content;
+  padding: 0 !important;
 }

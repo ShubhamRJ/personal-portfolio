@@ -61,7 +61,7 @@ export default function Projects() {
         className={styles.projectCard}
       >
         {list.map((item, index) => (
-          <Grid xs={12} sm={4} key={index}>
+          <Grid xs={12} sm={4} key={index} className={styles.gridCard}>
             <Card css={{ p: "$6", mw: "400px" }} isHoverable>
               <Card.Header className={styles.cardHeader}>
                 <Grid.Container css={{ pl: "$6" }}>
