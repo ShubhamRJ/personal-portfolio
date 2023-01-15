@@ -14,6 +14,10 @@ const NavItems = [
     link: "#work",
   },
   {
+    title: "Projects",
+    link: "#projects"
+  },
+  {
     title: "Education",
     link: "#education",
   },

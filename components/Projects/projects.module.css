@@ -1,0 +1,44 @@
+.projects {
+  min-height: 100vh;
+  height: fit-content;
+}
+
+@media (max-width: 768px) {
+  .projects {
+    min-height: fit-content;
+    margin-bottom: 2rem;
+  }
+}
+
+.cardHeader {
+  padding: 0 !important;
+  margin-top: 12px;
+}
+
+.cardBody {
+  padding: 0 !important;
+  margin: 0;
+}
+
+.tagButton {
+  min-height: fit-content;
+  min-width: 0 !important;
+  margin: 4px 2px;
+  padding: 10px;
+}
+
+.tagGroup {
+    margin: 10px 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.mainText {
+  padding-left: 12px;
+}
+
+.projectCard {
+  min-height: 100%;
+  height: fit-content;
+}

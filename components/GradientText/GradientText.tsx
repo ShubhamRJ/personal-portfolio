@@ -7,7 +7,7 @@ export default function GradientText(props) {
       className={styles.text}
       {...props}
       css={{
-        textGradient: "45deg, $blue600 -40%, $cyan600 35%",
+        textGradient: "45deg, $blue600 -20%, $cyan600 60%",
       }}
     >
       {props.text}

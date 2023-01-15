@@ -6,6 +6,7 @@ import Education from "../components/Education/Education";
 import Layout from "../components/layout";
 import Main from "../components/Main/Main";
 import NavBar from "../components/NavBar/NavBar";
+import Projects from "../components/Projects/Projects";
 import Social from "../components/Social/Social";
 import Work from "../components/Work/Work";
 import styles from "./index.module.css";
@@ -27,6 +28,7 @@ export default function Home() {
               <Main />
               <About />
               <Work />
+              <Projects />
               <Education />
               <Contact />
               <div className={styles.footer}>
@@ -44,6 +46,7 @@ export default function Home() {
               <Main />
               <About />
               <Work />
+              <Projects />
               <Education />
               <Contact />
             </Row>

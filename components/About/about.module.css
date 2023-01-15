@@ -13,7 +13,7 @@
 @media (max-width: 768px) {
     .about {
         width: 100%;
-        min-height: 110vh;
+        min-height: fit-content;
         text-align: start;
     }
 }

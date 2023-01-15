@@ -22,9 +22,9 @@ export default function Main() {
         className={device == "lg" ? styles.h1 : styles.h1small}
         weight="semibold"
       />
-      <Text h3={device == "lg"} h5={device != "lg"} css={{ color: "$gray700" }}>
-        Software Engineer &nbsp; | &nbsp; Travel Enthusiast &nbsp; | &nbsp;
-        Coffee for life
+      <Text h3={device == "lg"} h5={device != "lg"} size="$xl" css={{ color: "$gray700" }}>
+        Software Engineer 💻 &nbsp; | &nbsp; Travel Enthusiast ✈️ &nbsp; | &nbsp;
+        Coffee for life ☕️
       </Text>
     </div>
   );
