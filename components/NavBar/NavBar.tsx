@@ -63,7 +63,7 @@ export default function NavBar() {
             }
             height={20}
             width={20}
-            alt=""
+            alt="Theme"
           />
         </Button>
       )}
@@ -97,7 +97,7 @@ export default function NavBar() {
             }
             height={20}
             width={20}
-            alt=""
+            alt="Theme"
           />
         </Button>
       </Navbar.Content>

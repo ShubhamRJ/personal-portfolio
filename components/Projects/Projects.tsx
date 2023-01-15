@@ -88,7 +88,7 @@ export default function Projects() {
                     src="/images/github.svg"
                     height={device == "lg" ? 30 : 20}
                     width={device == "lg" ? 30 : 20}
-                    alt=""
+                    alt="Github"
                   />
                 </Link>
               </Card.Header>
