@@ -52,7 +52,7 @@ export default function NavBar() {
       {(device == "sm" || device == "xs") && (
         <Button
           flat
-          className={`${styles.themeButton} ${isDark ? "" : styles.lightTheme}`}
+          className={styles.themeButton}
           onClick={() => setTheme(isDark ? "light" : "dark")}
         >
           <Image

@@ -3,9 +3,4 @@
     width: fit-content;
     padding: 0;
     min-width: 0 !important;
-    /* background: transparent; */
-}
-
-.lightTheme {
-    background: transparent !important;
 }
