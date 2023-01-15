@@ -1,6 +1,6 @@
 .container {
   height: 100%;
-  padding: 0 20px 10px 20px;
+  padding: 0 20px 0px 20px;
 }
 .bodyRow {
   height: 90%;
@@ -8,6 +8,9 @@
 .bodyRow > * {
   height: 100%;
   justify-content: center;
+}
+.navRow {
+  height: 10%;
 }
 .mowBodyRow {
   height: 90%;
@@ -21,7 +24,7 @@
 }
 .mowMain {
   padding: 0 12px;
-  height: 95%;
+  height: 92%;
   display: flex;
   flex-direction: column;
   overflow-y: auto;
