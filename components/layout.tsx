@@ -2,16 +2,16 @@ import Head from "next/head";
 import styles from "./layout.module.css";
 
 export const siteTitle = "Shubham Jawandhiya";
+const description = `Hi! I'am Shubham, a 24. y/o Software Engineer. 
+I love to solve problems and build products & experiences. Currently pursuing MS in Computer Science at Stony Brook University, NY.`;
 
 export default function Layout({ children }) {
   return (
     <div className={styles.body}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
-        <meta
-          name="description"
-          content="Learn how to build a personal website using Next.js"
-        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content={description} />
         <meta
           property="og:image"
           content={`https://og-image.vercel.app/${encodeURI(

@@ -64,6 +64,7 @@ export default function NavBar() {
             height={20}
             width={20}
             alt="Theme"
+            priority
           />
         </Button>
       )}
@@ -98,6 +99,7 @@ export default function NavBar() {
             height={20}
             width={20}
             alt="Theme"
+            priority
           />
         </Button>
       </Navbar.Content>
