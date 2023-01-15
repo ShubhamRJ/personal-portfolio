@@ -2,7 +2,6 @@ import { Col, Container, Row, Text } from "@nextui-org/react";
 import About from "../components/About/About";
 import Contact from "../components/Contact/Contact";
 import { useAppContext } from "../components/Context/AppContext";
-import Education from "../components/Education/Education";
 import Layout from "../components/layout";
 import Main from "../components/Main/Main";
 import NavBar from "../components/NavBar/NavBar";
@@ -29,7 +28,7 @@ export default function Home() {
               <About />
               <Work />
               <Projects />
-              <Education />
+              {/* <Education /> */}
               <Contact />
               <div className={styles.footer}>
                 <div className={styles.line} />
@@ -47,7 +46,7 @@ export default function Home() {
               <About />
               <Work />
               <Projects />
-              <Education />
+              {/* <Education /> */}
               <Contact />
             </Row>
             <Row className={styles.mowSocial}>

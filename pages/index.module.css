@@ -38,7 +38,7 @@
 }
 .mowSocial {
   padding-top: 10px;
-  position: sticky;
+  position: absolute;
 }
 .line {
   width: 35%;

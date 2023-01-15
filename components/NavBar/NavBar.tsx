@@ -1,6 +1,9 @@
-import { Navbar, StyledLink } from "@nextui-org/react";
+import { Button, Navbar, StyledLink, useTheme } from "@nextui-org/react";
+import { useTheme as useNextTheme } from "next-themes";
+import Image from "next/image";
 import Link from "next/link";
 import { useRef, useState } from "react";
+import { useAppContext } from "../Context/AppContext";
 import GradientText from "../GradientText/GradientText";
 import styles from "./navbar.module.css";
 
@@ -15,12 +18,12 @@ const NavItems = [
   },
   {
     title: "Projects",
-    link: "#projects"
+    link: "#projects",
   },
-  {
-    title: "Education",
-    link: "#education",
-  },
+  // {
+  //   title: "Education",
+  //   link: "#education",
+  // },
   {
     title: "Contact",
     link: "#contact",
@@ -33,6 +36,9 @@ const NavItems = [
 
 export default function NavBar() {
   const [currentTab, setCurrentTab] = useState("");
+  const { setTheme } = useNextTheme();
+  const { isDark } = useTheme();
+  const device = useAppContext();
   const navToggleRef = useRef();
 
   return (
@@ -43,6 +49,24 @@ export default function NavBar() {
         </Link>
       </Navbar.Brand>
       <Navbar.Toggle showIn={"xs"} autoFocus ref={navToggleRef} />
+      {(device == "sm" || device == "xs") && (
+        <Button
+          flat
+          className={`${styles.themeButton} ${isDark ? "" : styles.lightTheme}`}
+          onClick={() => setTheme(isDark ? "light" : "dark")}
+        >
+          <Image
+            src={
+              isDark
+                ? "/images/moon-svgrepo-com.svg"
+                : "/images/sun-filled-svgrepo-com.svg"
+            }
+            height={20}
+            width={20}
+            alt=""
+          />
+        </Button>
+      )}
       <Navbar.Content
         enableCursorHighlight
         activeColor="primary"
@@ -60,6 +84,22 @@ export default function NavBar() {
             <GradientText text={item.title} weight="bold" />
           </Navbar.Link>
         ))}
+        <Button
+          flat
+          className={`${styles.themeButton} ${isDark ? "" : styles.lightTheme}`}
+          onClick={() => setTheme(isDark ? "light" : "dark")}
+        >
+          <Image
+            src={
+              isDark
+                ? "/images/moon-svgrepo-com.svg"
+                : "/images/sun-filled-svgrepo-com.svg"
+            }
+            height={20}
+            width={20}
+            alt=""
+          />
+        </Button>
       </Navbar.Content>
       <Navbar.Collapse disableAnimation>
         {NavItems.map((item) => (

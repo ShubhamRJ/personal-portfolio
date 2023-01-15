@@ -1,3 +1,11 @@
-.navbar > *{
-    background-color: #121212 !important;
+.themeButton {
+    border: none;
+    width: fit-content;
+    padding: 0;
+    min-width: 0 !important;
+    /* background: transparent; */
+}
+
+.lightTheme {
+    background: transparent !important;
 }
