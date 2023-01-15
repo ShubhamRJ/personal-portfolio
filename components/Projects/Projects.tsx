@@ -3,10 +3,12 @@ import { useAppContext } from "../Context/AppContext";
 import GradientText from "../GradientText/GradientText";
 import styles from "./projects.module.css";
 
-const tagTitles = {
+export const tagTitles = {
   GA: "Genetic Algorithm",
   NLP: "Natural Language Processing",
-  TS: "TypeScript"
+  TS: "TypeScript",
+  GKE: "Google Kubernetes Engine",
+  GCS: "Google Cloud Storage"
 };
 
 const list = [
