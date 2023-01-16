@@ -52,7 +52,7 @@ const list = [
     title: "Tourist",
     description:
       "A learning full-stack project for listing tourist places accross the world.",
-    tags: ["JS", "ExpressJS", "MongoDB", "HTML", "CSS", "NodeJS", "PassportJS"],
+    tags: ["JS", "ExpressJS", "MongoDB", "NodeJS", "PassportJS"],
     link: "https://github.com/ShubhamRJ/Tourist",
   },
 ];

@@ -39,7 +39,7 @@ export default function About() {
           size="$lg"
         />
         <Text h5 css={{ color: "$gray700" }} weight="normal">
-          Python3, JavaScript, TypeScript, C, C++, HTML, CSS, Golang
+          Python3, JavaScript, TypeScript, C, C++, Golang
         </Text>
       </div>
       <div className={styles.listdiv}>
@@ -77,14 +77,14 @@ export default function About() {
           Algorithms, Evolutionary Algorithms
         </Text>
       </div>
-      {(device == "lg" || device == "md") && <br />}
+      {/* {(device == "lg" || device == "md") && <br />}
       <div className={styles.listdiv}>
         <GradientText text="I enjoy &nbsp;" h4 weight="normal" />
         <Text h4 css={{ color: "$gray700" }} weight="normal" size="$lg">
           F1 🏎️ &nbsp; Reading 📚 &nbsp; Marvel 🤖 &nbsp; Photography 📷 &nbsp;
           Dogs 🐶 &nbsp; Running 🏃‍♂️ &nbsp; Treks ⛰️ etc.
         </Text>
-      </div>
+      </div> */}
       <Text h4 css={{ color: "$gray700" }} weight="normal" size="$lg">
         Looking forward to travel more and meet new people! &nbsp; Always in for
         a chat so feel free to say hi 👋🏻
