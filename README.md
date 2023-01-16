@@ -10,4 +10,4 @@ Inspired by <a href="https://brittanychiang.com/">Brittany Chiang</a>
 <br />
 <img src="https://github.com/ShubhamRJ/personal-portfolio/blob/main/public/images/Website.png" />
 <h4>Performance </h4>
-<img src="https://github.com/ShubhamRJ/personal-portfolio/blob/main/public/images/Performace.png" />
+<img src="https://github.com/ShubhamRJ/personal-portfolio/blob/main/public/images/Performance.png" />
