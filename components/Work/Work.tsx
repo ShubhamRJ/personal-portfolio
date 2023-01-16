@@ -79,7 +79,7 @@ export default function Work() {
               );
             }
             return (
-              <Text h6 onClick={() => setSelectedComp(comp)} color="$gray600">
+              <Text h6 onClick={() => setSelectedComp(comp)} color="$gray800">
                 {comp}
               </Text>
             );
@@ -93,13 +93,13 @@ export default function Work() {
             <Text h4 color="$gray800" weight="semibold">
               {companyContent[selectedComp].position}
             </Text>
-            <Text i color="$gray700">
+            <Text i color="$gray800">
               {companyContent[selectedComp].duration}
             </Text>
           </div>
           <ul className={styles.descList}>
             {companyContent[selectedComp].description.map((desc, index) => (
-              <li key={`desc-${index}`}>
+              <li key={`${selectedComp}-${index}`}>
                 <Text color="$gray700">{desc}</Text>
               </li>
             ))}
@@ -120,12 +120,12 @@ export default function Work() {
           </div>
           {companyContent[selectedComp].awards.length > 0 ? (
             <div className={styles.awards}>
-              <Text i color="$gray600" weight="semibold" size="$md">
+              <Text i color="$gray800" weight="semibold" size="$md">
                 Awards:{" "}
               </Text>
               <div className={styles.awardsList}>
                 {companyContent[selectedComp].awards.map((award) => (
-                  <Text color="$gray500" size="$md" key={award}>
+                  <Text color="$gray700" size="$md" key={award}>
                     &nbsp;{award}&nbsp;
                   </Text>
                 ))}

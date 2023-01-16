@@ -32,7 +32,7 @@ export default function Home() {
               <Contact />
               <div className={styles.footer}>
                 <div className={styles.line} />
-                <Text h5 css={{ color: "$gray600" }}>
+                <Text h5 css={{ color: "$gray700" }}>
                   Shubham Jawandhiya
                 </Text>
                 <div className={styles.line} />

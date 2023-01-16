@@ -81,6 +81,7 @@ export default function NavBar() {
             onClick={() => setCurrentTab(item.title)}
             isActive={item.title == currentTab}
             target={item.title == "Resume" ? "_blank" : ""}
+            id={item.title}
           >
             <GradientText text={item.title} weight="bold" />
           </Navbar.Link>
