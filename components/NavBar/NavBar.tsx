@@ -29,6 +29,10 @@ const NavItems = [
     link: "#contact",
   },
   {
+    title: "Blog",
+    link: "https://shubhamrj.github.io/"
+  },
+  {
     title: "Resume",
     link: "https://drive.google.com/file/d/1Egv0KIRrTl72JSiECBRA8goKsZe0Aycd/view?usp=share_link",
   },
