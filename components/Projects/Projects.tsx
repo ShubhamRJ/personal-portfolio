@@ -14,6 +14,13 @@ export const tagTitles = {
 
 const list = [
   {
+    title: "Performance Evaluation of Credit CPU Scheduler in XEN",
+    description:
+      "Evaluation of Credit CPU Scheduler in XEN hypervisor for performance and fairness by varying domain weights.",
+    tags: ["Xen", "Advanced OS", "Hypervisor"],
+    link: "https://drive.google.com/file/d/1fuu570AeeBp1XRQ_CSdSItKdH2AioRRh/view",
+  },
+  {
     title: "Author Sentiment Analysis",
     description:
       "Project to build models for the Author Sentiment Analysis Task [Mohaddeseh et. al., 2019]",
