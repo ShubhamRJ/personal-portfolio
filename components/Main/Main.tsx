@@ -2,6 +2,7 @@ import { Text } from "@nextui-org/react";
 import { useAppContext } from "../Context/AppContext";
 import GradientText from "../GradientText/GradientText";
 import styles from "./main.module.css";
+import Typewriter from 'typewriter-effect';
 
 export default function Main() {
   const device = useAppContext();
@@ -22,9 +23,22 @@ export default function Main() {
         className={device == "lg" ? styles.h1 : styles.h1small}
         weight="semibold"
       />
-      <Text h3={device == "lg"} h5={device != "lg"} size="$xl" css={{ color: "$gray700" }}>
-        Software Engineer 💻 &nbsp; | &nbsp; Travel Enthusiast ✈️ &nbsp; | &nbsp;
-        Coffee for life ☕️
+      <Text h2={device == "lg"} h5={device != "lg"} size="$2xl" css={{ color: "$gray700", display: "flex", flexDirection: "row" }}>
+        Software Engineer 💻 &nbsp;  &nbsp;
+        <Typewriter
+          options={{
+            strings: [
+              "MS CS at Stony Brook University 🎓",
+              "Loves to travel and explore new places",
+              "F1 enthusiast! Go Red Bull ❤️",
+              "Coffee for life ☕️",
+            ],
+            autoStart: true,
+            loop: true,
+            delay: 75,
+            deleteSpeed: 30,
+          }}
+        />
       </Text>
     </div>
   );
