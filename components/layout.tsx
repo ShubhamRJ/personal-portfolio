@@ -20,6 +20,7 @@ export default function Layout({ children }) {
         <meta name="og:description" content={description} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="author" content={siteTitle} />
+        <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="shubhamjawandhiya" data-description="Support me on Buy me a coffee!" data-message="" data-color="#00A2F5" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
       </Head>
       <main className={styles.body}>{children}</main>
     </div>
