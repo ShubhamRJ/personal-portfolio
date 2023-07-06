@@ -2,7 +2,7 @@ import { Text } from "@nextui-org/react";
 import { useAppContext } from "../Context/AppContext";
 import GradientText from "../GradientText/GradientText";
 import styles from "./main.module.css";
-import Typewriter from 'typewriter-effect';
+import Typewriter from "typewriter-effect";
 
 export default function Main() {
   const device = useAppContext();
@@ -23,8 +23,17 @@ export default function Main() {
         className={device == "lg" ? styles.h1 : styles.h1small}
         weight="semibold"
       />
-      <Text h2={device == "lg"} h5={device != "lg"} size={device === "lg" ? "$2xl" : "$xl"} css={{ color: "$gray700", display: "flex", flexDirection: device === "lg" ? "row" : "column" }}>
-        Software Engineer 💻 &nbsp;  &nbsp;
+      <Text
+        h2={device == "lg"}
+        h5={device != "lg"}
+        size={device === "lg" ? "$2xl" : "$xl"}
+        css={{
+          color: "$gray700",
+          display: "flex",
+          flexDirection: device === "lg" ? "row" : "column",
+        }}
+      >
+        Software Engineer 💻 &nbsp; &nbsp;
         <Typewriter
           options={{
             strings: [
