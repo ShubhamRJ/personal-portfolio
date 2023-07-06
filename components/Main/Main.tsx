@@ -23,7 +23,7 @@ export default function Main() {
         className={device == "lg" ? styles.h1 : styles.h1small}
         weight="semibold"
       />
-      <Text h2={device == "lg"} h5={device != "lg"} size="$2xl" css={{ color: "$gray700", display: "flex", flexDirection: "row" }}>
+      <Text h2={device == "lg"} h5={device != "lg"} size={device === "lg" ? "$2xl" : "$xl"} css={{ color: "$gray700", display: "flex", flexDirection: device === "lg" ? "row" : "column" }}>
         Software Engineer 💻 &nbsp;  &nbsp;
         <Typewriter
           options={{
