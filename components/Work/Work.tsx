@@ -79,7 +79,7 @@ export default function Work() {
               );
             }
             return (
-              <Text h6 onClick={() => setSelectedComp(comp)} color="$gray800">
+              <Text h6 onClick={() => setSelectedComp(comp)} color="$gray800" key={comp}>
                 {comp}
               </Text>
             );
