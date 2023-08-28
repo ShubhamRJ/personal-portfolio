@@ -34,7 +34,7 @@ const NavItems = [
   },
   {
     title: "Resume",
-    link: "https://drive.google.com/file/d/13fpuz19pBSQIYCuY0ArSX3oM5XmWHfuh/view?usp=sharing",
+    link: "https://drive.google.com/file/d/1Ck9LPaCggb6l9ABhHADoaC8YmxHIxHMo/view?usp=sharing",
   },
 ];
 
