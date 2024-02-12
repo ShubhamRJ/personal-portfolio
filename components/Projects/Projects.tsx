@@ -14,6 +14,13 @@ export const tagTitles = {
 
 const list = [
   {
+    title: "Fault-tolerant Distributed Key Value Store (Raft consensus)",
+    description:
+      "Distributed, fault-tolerant and sharded key-value store with transaction support (OCC, 2PL, 2PC) written in C++. (Private Repo)",
+    tags: ["Distributed", "KV Store", "Raft", "C++"],
+    link: "",
+  },
+  {
     title: "Performance Evaluation of Credit CPU Scheduler in XEN",
     description:
       "Evaluation of Credit CPU Scheduler in XEN hypervisor for performance and fairness by varying domain weights.",
