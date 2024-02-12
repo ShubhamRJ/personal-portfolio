@@ -12,6 +12,7 @@ export default function Layout({ children }) {
       <Head>
         <title>ShubhamRJ</title>
         <meta name="description" content={description} />
+        <meta charSet="utf-8" />
         <meta
           property="og:image"
           content={`https://github.com/ShubhamRJ/personal-portfolio/blob/main/public/images/Website.png`}

@@ -5,9 +5,8 @@
     text-align: justify;
 }
 
-.listdiv {
-    display: flex;
-    flex-direction: row;
+.skillName {
+    text-align: left;
 }
 
 @media (max-width: 768px) {
