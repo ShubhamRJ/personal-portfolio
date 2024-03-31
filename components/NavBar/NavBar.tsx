@@ -34,7 +34,7 @@ const NavItems = [
   },
   {
     title: "Resume",
-    link: "bit.ly/Shubham_Jawandhiya_Resume",
+    link: "https://bit.ly/Shubham_Jawandhiya_Resume",
   },
 ];
 
