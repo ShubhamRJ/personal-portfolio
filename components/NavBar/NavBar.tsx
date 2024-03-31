@@ -34,7 +34,7 @@ const NavItems = [
   },
   {
     title: "Resume",
-    link: "https://drive.google.com/file/d/1Ck9LPaCggb6l9ABhHADoaC8YmxHIxHMo/view?usp=sharing",
+    link: "bit.ly/Shubham_Jawandhiya_Resume",
   },
 ];
 
