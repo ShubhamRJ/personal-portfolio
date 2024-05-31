@@ -3,8 +3,7 @@ import styles from "./layout.module.css";
 import Script from "next/script";
 
 export const siteTitle = "Shubham Jawandhiya";
-const description = `Hi! I'am Shubham, a 24. y/o Software Engineer. 
-I love to solve problems and build products & experiences. Currently pursuing MS in Computer Science at Stony Brook University, NY.`;
+const description = `Hi! I'am Shubham, a 26. y/o Software Engineer with a Master's degree in Computer Science from Stony Brook University. Specializes in Distributed Systems. Full-stack web development and NLP hobbyist.`;
 
 export default function Layout({ children }) {
   return (
