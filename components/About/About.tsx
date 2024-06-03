@@ -4,7 +4,7 @@ import GradientText from "../GradientText/GradientText";
 import styles from "./about.module.css";
 
 const skills = {
-  "Languages:": "Python3, JavaScript, TypeScript, C, C++, SQL, HTML, CSS",
+  "Languages:": "Python3, JavaScript, TypeScript, Java, C++, SQL, HTML, CSS",
   "Databases:": "MySQL, MongoDB, Firebase, CockroachDB, SingleStore VectorDB",
   "Web Technologies:": "NodeJS, ReactJS, NextJS, Flask, Jest, Pytest, Webpack",
   "AI Technologies:":
@@ -26,7 +26,7 @@ export default function About() {
         <br />
         <br />
         Hey there! I am junior software engineer based in NY, United States.
-        Currently a graduate student at{" "}
+        I just completed my Master's in Computer Science from {" "}
         <Link href="https://www.stonybrook.edu/" target="_blank">
           <GradientText
             h4
@@ -35,11 +35,9 @@ export default function About() {
           ></GradientText>
         </Link>
         <br />
-        I am continuously working on creating, evaluating and writing new ideas
-        on my <a href="https://shubhamrj.github.io" target="_blank">personal blog</a>. I have a special knack for understanding the
-        products & services from a customer's perspective and orienting my ideas
-        and code accordingly. I lookout for challenges and learning
-        opportunities from engineers around me.
+        I specialize in full-stack engineering and distributed systems. I also share my ideas on 
+        my <a href="https://shubhamrj.github.io" target="_blank">personal blog</a>. I bring a good balance of 
+        product and engineering mindset. And I am always looking for new challenges and opportunities to learn and grow.
         <br />
         I have experience with:
         <br />{" "}

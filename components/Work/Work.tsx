@@ -6,8 +6,38 @@ import GradientText from "../GradientText/GradientText";
 import { tagTitles } from "../Projects/Projects";
 import styles from "./work.module.css";
 
-const companyList = ["Lowe's", "Crio.Do"];
+const companyList = ["SBU", "Lowe's", "Crio.Do"];
 const companyContent = {
+  "SBU": {
+    name: "Stony Brook University",
+    link: "https://workflow.cs.stonybrook.edu/",
+    shortName: "SBU",
+    duration: "Jan 2023 - Dec 2023",
+    position: "Software Engineer",
+    description: [
+      "Developed an application management system (in a team of 2) for automating departmental workflows in Stony Brook University's Computer Science department. This digitized 10+ paper/google doc-based workflows.",
+      "Google OAuth2.0 integration for user authentication and authorization.",
+      "Developed a RESTful API backend in NodeJS, ExpressJS and Firebase for handling CRUD operations.",
+      "Implemented a custom email server using Postal for sending notifications to users.",
+      "Google calendar integration for scheduling appointments and meetings.",
+      "Nginx reverse proxy for routing requests to different services hosted on Cloud functions.",
+      "Role-based access control for managing user permissions and roles.",
+    ],
+    tags: [
+      "Firebase", 
+      "Google Cloud Functions", 
+      "ReactJS", 
+      "NodeJS", 
+      "ExpressJS", 
+      "Webpack", 
+      "Nginx", 
+      "Docker", 
+      "GCP", 
+      "Git", 
+      "Postal email server"
+    ],
+    awards: [],
+  },
   "Lowe's": {
     name: "Lowe's Companies, Inc.",
     link: "https://lowes.com",
@@ -34,6 +64,9 @@ const companyContent = {
       "Module Federation",
       "Akamai",
       "SonarQube",
+      "Veracode",
+      "GCP",
+      "Datadog",
     ],
     awards: ["Spot Award x 3 (2021, 2022),", "Top Contributor Award"],
   },

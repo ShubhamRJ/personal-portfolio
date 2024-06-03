@@ -33,19 +33,21 @@ export default function Main() {
           flexDirection: device === "lg" ? "row" : "column",
         }}
       >
-        Software Engineer 💻 &nbsp; &nbsp;
+        Software Engineer &nbsp; &nbsp; | &nbsp; &nbsp;
         <Typewriter
           options={{
             strings: [
-              "MS CS at Stony Brook University 🎓",
-              "Loves to travel and explore new places",
-              "F1 enthusiast! Go Red Bull ❤️",
-              "Coffee for life ☕️",
+              "<span> &#9906; </span> United States of America",
+              "Master's in Computer Science 🎓",
+              "Distributed Systems",
+              "Natural Language Processing", 
+              "Full-Stack Engineering",
+              "Travel, Volleyball, F1, Coffee....",
             ],
             autoStart: true,
             loop: true,
-            delay: 75,
-            deleteSpeed: 30,
+            delay: 50,
+            deleteSpeed: 10,
           }}
         />
       </Text>

@@ -16,7 +16,7 @@ const list = [
   {
     title: "Fault-tolerant Distributed Key Value Store (Raft consensus)",
     description:
-      "Distributed, fault-tolerant and sharded key-value store with transaction support (OCC, 2PL, 2PC) written in C++. (Private Repo)",
+      "Distributed, fault-tolerant and sharded key-value store similar to Google Spanner with transaction support (OCC, 2PL, 2PC) written in C++. (Private Repo)",
     tags: ["Distributed", "KV Store", "Raft", "C++"],
     link: "",
   },
@@ -28,11 +28,23 @@ const list = [
     link: "https://drive.google.com/file/d/1fuu570AeeBp1XRQ_CSdSItKdH2AioRRh/view",
   },
   {
+    title: "Dialogue Summarization – PyTorch, LLMs",
+    description: "Experimented with pretrained FLAN-T5 model on DialogSum dataset and ompared the performance of zero-shot, one-shot and few-shot inference dialogue summarization task.",
+    tags: ["NLP", "Pytorch", "Python"],
+    link: "https://github.com/ShubhamRJ/NLP-Practice/blob/main/Coursera%20-%20DeepLearn.ai%20-%20Generative%20AI%20with%20LLMs/Lab_1_summarize_dialogue.ipynb"
+  },
+  {
     title: "Author Sentiment Analysis",
     description:
       "Project to build models for the Author Sentiment Analysis Task [Mohaddeseh et. al., 2019]",
     tags: ["NLP", "Pytorch", "Python"],
     link: "https://github.com/ShubhamRJ/Author-Sentiment-Analysis",
+  },
+  {
+    title: "Satellite Image Super-resolution",
+    description: "Super-resolution of low-cost low-quality satellite images using pre-trained GANs and CNNs. Compared using number of SIFT features found.",
+    tags: ["CV", "GAN", "CNN", "Python"],
+    link: "https://github.com/yashodeepm/super-resolution",
   },
   {
     title: "Text clustering optimization",
