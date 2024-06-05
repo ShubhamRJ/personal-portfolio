@@ -37,6 +37,9 @@ export default function Social() {
       >
         <Image src="/images/stack-overflow.svg" height={20} width={20}  alt="Stack" priority />
       </a>
+      <a href="https://leetcode.com/u/codebankai/" target="_blank">
+        <Image src="/images/leetcode.svg" height={20} width={20} alt="LeetCode" priority />
+      </a>
     </div>
   );
 }
