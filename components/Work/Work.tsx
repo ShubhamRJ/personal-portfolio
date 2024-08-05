@@ -6,8 +6,19 @@ import GradientText from "../GradientText/GradientText";
 import { tagTitles } from "../Projects/Projects";
 import styles from "./work.module.css";
 
-const companyList = ["SBU", "Lowe's", "Crio.Do"];
 const companyContent = {
+  "Microsoft": {
+    name: "Microsoft Corporation",
+    link: "https://microsoft.com",
+    shortName: "Microsoft",
+    duration: "August 2024 - Present",
+    position: "Software Engineer II",
+    description: [
+      "Working on Azure DataCenter Platform Management Team."
+    ],
+    tags: [],
+    awards: []
+  },
   "SBU": {
     name: "Stony Brook University",
     link: "https://workflow.cs.stonybrook.edu/",
@@ -89,7 +100,7 @@ const companyContent = {
 
 export default function Work() {
   const device = useAppContext();
-  const [selectedComp, setSelectedComp] = useState("Lowe's");
+  const [selectedComp, setSelectedComp] = useState(Object.keys(companyContent)[0]);
   return (
     <div id="work" className={styles.work}>
       <GradientText
@@ -99,7 +110,7 @@ export default function Work() {
       />
       <Grid.Container className={styles.workMain}>
         <Grid sm={2} xs={12} className={styles.companyList}>
-          {companyList.map((comp) => {
+          {Object.keys(companyContent).map((comp) => {
             if (comp == selectedComp) {
               return (
                 <GradientText

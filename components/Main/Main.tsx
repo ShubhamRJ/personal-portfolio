@@ -26,14 +26,14 @@ export default function Main() {
       <Text
         h2={device == "lg"}
         h5={device != "lg"}
-        size={device === "lg" ? "$2xl" : "$xl"}
+        size="$xl"
         css={{
           color: "$gray700",
           display: "flex",
           flexDirection: device === "lg" ? "row" : "column",
         }}
       >
-        Software Engineer &nbsp; &nbsp; | &nbsp; &nbsp;
+        SWE II @Microsoft &nbsp; &nbsp; | &nbsp; &nbsp;
         <Typewriter
           options={{
             strings: [
